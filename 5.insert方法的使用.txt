@@ -1,0 +1,5 @@
+1. insert(Object object)
+会向数据库中插入该Object， 并根据bean中的 @GeneratedValue 返回该主键数值
+
+2.insertSelective(Object object)   ------- （推荐使用）
+非主键的字段诺为null 则不加入sql语句中。 作用 使sql语句更加整洁， 

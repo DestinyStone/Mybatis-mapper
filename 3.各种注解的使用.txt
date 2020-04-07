@@ -1,0 +1,8 @@
+@Table(name="")
+定义在类名之上，当类名与数据库表名不同时使用   
+@Id
+声明bean中的那个属性为主键
+@Column
+声明bean中除主键外的平常列
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+声明主键采用的策略

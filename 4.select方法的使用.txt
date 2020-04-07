@@ -1,0 +1,9 @@
+方法并非全部， 只写一些不容易理解的方法
+1. selectOne(Object t)
+根据参数对象的非空值构建sql语句，
+如 Persion persion = new Persion(1);  persionMapper.selectOne(persion)
+其中查询结果只能是一条， 不然会抛出异常
+
+2.selectByPrimaryKey(int id)
+根据主键查询， 使用该方法时必须注意该类对应bean中是否存在@Id, 
+通用mapper是根据该注解构建sql语句的

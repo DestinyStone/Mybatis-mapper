@@ -1,0 +1,4 @@
+1.delete(Object obj)
+注意： obj不可为null， 不然整表删除
+
+2.deleteByPrimaryKey(int id)

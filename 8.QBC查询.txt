@@ -1,0 +1,15 @@
+全程
+	Query by Criteria  : 有条件的查询
+
+步骤
+1 创建example 对象  
+	Example example = new Example(bean.class);
+2 获取 criteria 对象
+	Criteria criteria = example.createCriteria();
+
+创建查询条件
+a， where 中的条件在 criteria 中实现， 如 where id = 1, 或者 where id not is null
+	criteria.andEqualTo("id", 1)
+
+b, 其他条件在 example 中实现 ， 如 desc， distinit， 等
+	如 排序 example.setOrderByClause("id desc");   两个排序字段 ， example.setOrderByClause("id, name desc");
